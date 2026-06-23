@@ -100,27 +100,27 @@ export function HomeNarrative() {
         viewport={{ once: true, amount: 0.4 }}
         transition={{ staggerChildren: 0.22 }}
       >
-        {/* 巨大的装饰性引号,作为背景肌理 */}
+        {/* 装饰性引号:正常排版,放在引言上方,完全可见、不被导航遮挡 */}
         <motion.span
-          variants={{ hidden: { opacity: 0 }, show: { opacity: 0.12 } }}
-          transition={{ duration: 1.2, ease }}
+          variants={{ hidden: { opacity: 0, y: 12 }, show: { opacity: 1, y: 0 } }}
+          transition={{ duration: 1, ease }}
           aria-hidden
-          className="pointer-events-none absolute -left-2 -top-10 select-none font-serif text-[10rem] leading-none text-accent sm:-top-16 sm:text-[14rem]"
+          className="mb-1 block select-none font-serif text-[5rem] leading-[0.5] text-accent/25 sm:text-[6.5rem]"
         >
           “
         </motion.span>
 
-        <Line className={`relative ${speak}`}>
+        <Line className={speak}>
           未来已经到来,
         </Line>
-        <Line className={`relative ${speak} mt-1`}>
+        <Line className={`${speak} mt-1`}>
           只是<span className="text-accent">尚未均匀分布</span>。
         </Line>
-        <Line className="relative mt-8 text-sm tracking-[0.2em] text-[var(--fg-muted)]">
+        <Line className="mt-8 text-sm tracking-[0.2em] text-[var(--fg-muted)]">
           —— 威廉·吉布森 · WILLIAM GIBSON
         </Line>
 
-        <Line className="relative mt-16 flex items-center gap-2 text-sm text-[var(--fg-muted)]">
+        <Line className="mt-16 flex items-center gap-2 text-sm text-[var(--fg-muted)]">
           <span className="scroll-cue inline-block">↓</span>
           <span>向下滚动</span>
         </Line>

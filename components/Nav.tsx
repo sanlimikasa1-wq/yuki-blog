@@ -7,7 +7,6 @@ import { ThemeToggle } from "./ThemeToggle";
 // 顶部导航项
 const links = [
   { href: "/", label: "首页" },
-  { href: "/blog", label: "博客" },
   { href: "/about", label: "关于" },
 ];
 

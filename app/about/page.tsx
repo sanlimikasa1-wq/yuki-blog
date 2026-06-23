@@ -92,7 +92,7 @@ export default function AboutPage() {
             我是赵御行,更希望你叫我 <span className="text-accent">yuki</span>。
             目前希望进入 FDE 领域,熟悉各行各业的业务逻辑,让更多技能赋予己身。
             我是国际经营专业出身,在东京留学了五年,日语也拿到了 N1;回国后,
-            我没有受邀进入日企,而是想做一些自己真正感兴趣的事。
+            我婉拒了日企的邀约,想去做一些自己真正感兴趣的事。
           </p>
         </section>
       </FadeIn>

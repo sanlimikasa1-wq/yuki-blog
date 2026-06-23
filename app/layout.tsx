@@ -6,12 +6,12 @@ import { Footer } from "@/components/Footer";
 // 站点全局元信息(利于 SEO 与社交分享)
 export const metadata: Metadata = {
   title: {
-    default: "赵御行 | FDE · 博客与作品集",
+    default: "赵御行 yuki | FDE",
     template: "%s | 赵御行",
   },
   description:
-    "赵御行的个人博客与作品集 —— 记录技术实践与思考,面向前线部署工程(FDE)方向。",
-  metadataBase: new URL("https://example.com"),
+    "赵御行(yuki)—— FDE 方向,一个把 AI 当作母语的人。",
+  metadataBase: new URL("https://yuki-blog-topaz.vercel.app"),
 };
 
 // 内联脚本:在页面渲染前同步设置暗色模式,避免主题闪烁(FOUC)
